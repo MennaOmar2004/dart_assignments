@@ -7,7 +7,7 @@ class BankAccount{
   get showBalance => print("balance = $_balance") ;
 
   set balance (double balance){
-    if(balance > 0){
+    if(balance >= 0){
       _balance = balance;
       print("succssfuly");
     }
