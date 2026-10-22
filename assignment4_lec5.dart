@@ -65,22 +65,23 @@ double totalValueOfAllProducts2(List<Product>products){
   return totalValue;
 }
 
+//===================================================
+
 void main (){
-// // Task 1 — Functions: Grade Calculator
-// double a = 70.5;
-// double b = 55.0;
-// double c = 80.5;
-// double total = calculateTotal(a, b, c);
-// double average = calculateAverage(total);
-// print("total = $total");
-// print("average = $average");
-// print(getResult(average));
+// Task 1 — Functions: Grade Calculator
+double a = 70.5;
+double b = 55.0;
+double c = 80.5;
+double total = calculateTotal(a, b, c);
+double average = calculateAverage(total);
+print("total = $total");
+print("average = $average");
+print(getResult(average));
+
+print("====================================================");
 
 
-// print("====================================================");
-
-// //===============================================================
-// // Task 2 
+// Task 2 
  Student student1 = Student("Hana", 16, 50);
  Student student2 = Student("Ahmed", 15, 85);
  Student student3 = Student("Omar", 15, 45);
@@ -91,26 +92,25 @@ print("${student2.name} isPassed : ${student1.isPassed(student2.grade)}");
 print("${student3.name} isPassed : ${student1.isPassed(student3.grade)}");
 findTopStudent(students);
 
-// print("====================================================");
+print("====================================================");
 
-// //===============================================================
-// // Task 3
-// BankAccount object =BankAccount("Menna");
-// object.balance=500;
-// object.showBalance;
-// object.deposit(250);
-// object.showBalance;
-// object.deposit(-250);
-// object.withdraw(100);
-// object.showBalance;
-// object.withdraw(700);
-// object.showBalance;
 
-// print("====================================================");
+// Task 3
+BankAccount object =BankAccount("Menna");
+object.balance=500;
+object.showBalance;
+object.deposit(250);
+object.showBalance;
+object.deposit(-250);
+object.withdraw(100);
+object.showBalance;
+object.withdraw(700);
+object.showBalance;
 
-//===============================================================
+print("====================================================");
+
+
 //task 4
-
 Product item1 = Product(name: "Laptop", id: 1001);
 Product item2 = Product(name: "Mouse", id: 1007);
 Product item3 = Product(name: "Keyboard", id: 1005);
@@ -132,7 +132,7 @@ print("total value of ${item3.name} = ${item3.calculateTotalValue()}");
 // print("total price = ${totalValueOfAllProducts(products)}");
 print("total price = ${totalValueOfAllProducts2(products)}");
 
-print("product is : ${findProduct(products, 10051)}");
+print("product is : ${findProduct(products, 1001)}");
 
 print("quntity of ${item3.name} after ubdatation = ${item3.ubdateStock(-4)}");
 
